@@ -14,7 +14,7 @@ int process(myqueue<T> q1) {
 			cout << sz << "\n";
 		}
 		else if (var == "enqueue") {
-			int tmp;
+			T tmp;
 			cin >> tmp;
 			q1.enqueue(tmp);
 		}
@@ -25,7 +25,7 @@ int process(myqueue<T> q1) {
 				continue;
 			}
 			else {
-				int tmp = q1.dequeue();
+				T tmp = q1.dequeue();
 				cout << tmp << "\n";
 			}
 		}
@@ -36,7 +36,7 @@ int process(myqueue<T> q1) {
 				continue;
 			}
 			else {
-				int tmp = q1.front();
+				T tmp = q1.front();
 				cout << tmp << "\n";
 			}
 		}
@@ -60,19 +60,19 @@ int main(){
 	myqueue<int> q1;
 	if (someVar == "int") {
 		myqueue<int> q1;
-		process(q1)
+		process(q1);
 	}
 	else if (someVar == "double") {
 		myqueue<double> q1;
-		process(q1)
+		process(q1);
 	}
 	else if (someVar == "char") {
 		myqueue<char> q1;
-		process(q1)
+		process(q1);
 	}
 	else if (someVar == "string") {
 		myqueue<string> q1;
-		process(q1)
+		process(q1);
 	}
 	
 	return 0;
