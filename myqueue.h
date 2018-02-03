@@ -33,17 +33,17 @@ bool myqueue<T>::empty() {
 
 template <class T>
 T myqueue<T>::front() {
-	if (empty()) {
+	/*if (empty()) {
 		return 0;
-	}
+	}*/
 	return Q[f];
 }
 
 template <class T>
 T myqueue<T>::dequeue() {
-	if (empty()) {
+	/*if (empty()) {
 		return 0;
-	}
+	}*/
 	int tmp = f;
 	f = (f + 1) % MAX_SIZE;
 	n--;
