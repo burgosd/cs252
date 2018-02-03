@@ -42,10 +42,10 @@ bool mystack<T>::empty() {
 
 template <class T>
 T mystack<T>::top() {
-	if (empty()) {
+	/*if (empty()) {
 		//cout<<"top of empty stack\n";
-		return 0;
-	}
+		return nullptr;
+	}*/
 	return S[t];
 }
 
@@ -60,10 +60,10 @@ void mystack<T>::push(T x) {
 
 template <class T>
 T mystack<T>::pop() {
-	if (empty()) {
+	/*if (empty()) {
 		//cout<<"pop form empty stack\n";
-		return 0;
-	}
+		return nullptr;
+	}*/
 	return S[t--];
 }
 #endif

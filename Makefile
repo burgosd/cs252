@@ -1,7 +1,7 @@
 all: stack queue expr_eval
 
-stack: stack_main.cpp mystack.h  
-	g++ -o stack stack_main.cpp
+stack: stack_main_backup.cpp mystack.h  
+	g++ -o stack stack_main_backup.cpp
 	
 queue: queue_main.cpp myqueue.h
 	g++ -o queue queue_main.cpp

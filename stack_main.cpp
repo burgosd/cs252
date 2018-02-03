@@ -12,19 +12,24 @@ int main(){
 	string someVar;
 	cin >> someVar;
 	//cout << someVar << "\n";
-	//mystack<int> s1;
+	const string var = someVar;
+	mystack <var> sint;
+	mystack <double> sdouble;
+	mystack <char> schar;
+	mystack <string> sstring;
+	/*
 	if (someVar == "int") {
-		mystack<int> s1;
+		mystack <int> s1;
 	}
 	else if (someVar == "double") {
-		mystack<double> s1;
+		mystack <double> s1;
 	}
 	else if (someVar == "char") {
-		mystack<char> s1;
+		mystack <char> s1;
 	}
 	else if (someVar == "string") {
-		mystack<string> s1;
-	}
+		mystack <string> s1;
+	}*/
 	
 	string var;
 	cin >> var;
