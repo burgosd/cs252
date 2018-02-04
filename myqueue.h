@@ -2,6 +2,8 @@
 #define MYQUEUE_H
 #define MAX_SIZE 10000
 
+#include <stdio.h>
+using namespace std;
 template <class T>
 class myqueue{
   private:
@@ -28,7 +30,7 @@ int myqueue<T>::size() {
 
 template <class T>
 bool myqueue<T>::empty() {
-	return (n = 0);
+	return (n == 0);
 }
 
 template <class T>
@@ -47,13 +49,15 @@ T myqueue<T>::dequeue() {
 	int tmp = f;
 	f = (f + 1) % MAX_SIZE;
 	n--;
-	return Q[f];
+	return Q[tmp];
 }
 
 template <class T>
 void myqueue<T>::enqueue(T x) {
 	Q[r] = x;
+	//cout << "enqueue " << r << " ";
 	r = (r + 1) % MAX_SIZE;
+	//cout << r << "\n";
 	n++;
 }
 

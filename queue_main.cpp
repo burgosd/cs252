@@ -11,6 +11,7 @@ int process(myqueue<T> q1) {
 		//cout << var << "\n";
 		if (var == "size") {
 			int sz = q1.size();
+			//cout << "size is " << sz << "\n";
 			cout << sz << "\n";
 		}
 		else if (var == "enqueue") {
@@ -26,6 +27,7 @@ int process(myqueue<T> q1) {
 			}
 			else {
 				T tmp = q1.dequeue();
+				//cout << "dequeue is " << tmp << "\n";
 				cout << tmp << "\n";
 			}
 		}
@@ -37,6 +39,7 @@ int process(myqueue<T> q1) {
 			}
 			else {
 				T tmp = q1.front();
+				//cout << "front is " << tmp << "\n";
 				cout << tmp << "\n";
 			}
 		}
