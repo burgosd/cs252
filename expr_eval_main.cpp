@@ -10,6 +10,6 @@ int main(){
 	expr_eval e;
 	cin >> someVar;
 	
-	e.eval(someVar, NULL);
+	e.eval(someVar, 0);
   return 0;
 }
