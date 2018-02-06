@@ -6,10 +6,20 @@
 using namespace std;
 
 int main(){
-	string someVar;
+	string var;
 	expr_eval e;
-	cin >> someVar;
+	cin >> var;
 	
-	e.eval(someVar, 0);
+	while (!cin.eof()) {
+		if (var.find("x") != string::npos) {
+			cout << "test\n";
+			double x;
+			cin >> x;
+			e.eval(var, x);
+		}
+		else
+			e.eval(var, NULL);
+		cin >> var;
+	}
   return 0;
 }
